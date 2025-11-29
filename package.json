@@ -1,0 +1,12 @@
+{
+  "name": "vetro-website",
+  "version": "1.0.0",
+  "description": "Vetro Cleaning Service website",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
