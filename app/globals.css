@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-7 py-3.5 font-medium rounded-xl border-none cursor-pointer transition-all duration-200 min-h-[48px];
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white hover:bg-accent-hover hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-gray-900 border-2 border-gray-200 hover:border-accent hover:text-accent;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .section-alt {
+    @apply bg-gray-50;
+  }
+
+  .section-header {
+    @apply max-w-xl mx-auto mb-12 text-center;
+  }
+
+  .section-header h2 {
+    @apply mb-4;
+  }
+}
+
+/* Skip Link */
+.skip-link {
+  @apply absolute -top-full left-4 bg-accent text-white px-4 py-2 rounded-lg z-[10000] focus:top-4;
+}
