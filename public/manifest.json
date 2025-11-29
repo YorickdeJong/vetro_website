@@ -1,0 +1,25 @@
+{
+  "name": "Vetro Cleaning Service",
+  "short_name": "Vetro",
+  "description": "Professionele schoonmaakdiensten in Noord-Holland - Haarlem, Amsterdam, Utrecht en omgeving",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d9488",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "lifestyle"],
+  "lang": "nl",
+  "dir": "ltr"
+}

@@ -13,13 +13,13 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-widest mb-4 opacity-90 animate-fade-in-up">Vetro Cleaning Service</p>
+            <p className="text-sm font-medium uppercase tracking-widest mb-4 opacity-90 animate-fade-in-up">Professionele Schoonmaak Noord-Holland</p>
             <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 animate-fade-in-up delay-100">
               Schoonmaken is een vak. Punt.
             </h1>
             <p className="text-xl mb-10 opacity-95 animate-fade-in-up delay-200">
-              Al meer dan 20 jaar leveren wij professionele schoonmaakdiensten met persoonlijke aandacht.
-              Direct contact met de eigenaar, altijd betrouwbaar.
+              Al meer dan 20 jaar dé specialist in professionele schoonmaakdiensten in Haarlem, Amsterdam, Utrecht en heel Noord-Holland.
+              Direct contact met de eigenaar, 100% betrouwbaar.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
               <Link href="#contact" className="btn btn-primary">Vraag een offerte aan</Link>
@@ -36,9 +36,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <header className="section-header">
-              <h2 id="services-heading" className="text-3xl md:text-4xl font-semibold">Onze Diensten</h2>
+              <h2 id="services-heading" className="text-3xl md:text-4xl font-semibold">Schoonmaakdiensten in Noord-Holland</h2>
               <p className="text-gray-500">
-                Wij verzorgen professionele schoonmaak voor diverse sectoren. Van dagelijkse schoonmaak tot specialistische reiniging.
+                Van Bloemendaal tot Utrecht: wij verzorgen professionele schoonmaak voor diverse sectoren.
+                Dagelijkse schoonmaak, specialistische reiniging en alles daartussenin.
               </p>
             </header>
           </AnimateOnScroll>
@@ -267,6 +268,43 @@ export default function Home() {
               </article>
             </AnimateOnScroll>
           </div>
+        </div>
+      </section>
+
+      {/* Service Area / Werkgebied - Important for Local SEO */}
+      <section id="werkgebied" className="section section-alt" aria-labelledby="werkgebied-heading">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateOnScroll>
+            <header className="section-header">
+              <h2 id="werkgebied-heading" className="text-3xl md:text-4xl font-semibold">Ons Werkgebied</h2>
+              <p className="text-gray-500">
+                Wij verzorgen professionele schoonmaakdiensten in heel Noord-Holland en de Randstad.
+                Van Bloemendaal tot Utrecht, wij komen naar u toe.
+              </p>
+            </header>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={100}>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+              {[
+                'Haarlem', 'Amsterdam', 'Utrecht', 'Bloemendaal', 'Heemstede', 'Amstelveen',
+                'Hoofddorp', 'Hilversum', 'Amersfoort', 'Almere', 'Zaandam', 'Zandvoort',
+                'Aerdenhout', 'Overveen', 'Santpoort', 'IJmuiden', 'Beverwijk', 'Purmerend',
+                'Bussum', 'Naarden', 'Zeist', 'Baarn', 'Nieuw-Vennep', 'Diemen'
+              ].map((city) => (
+                <div key={city} className="bg-white rounded-lg py-3 px-4 shadow-sm border border-gray-100 hover:border-accent hover:shadow-md transition-all">
+                  <span className="text-gray-700 font-medium">{city}</span>
+                </div>
+              ))}
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={200}>
+            <p className="text-center text-gray-500 mt-8">
+              Staat uw locatie er niet bij? Neem gerust <a href="#contact" className="text-accent hover:underline">contact</a> met ons op.
+              Wij zijn flexibel en komen graag naar u toe!
+            </p>
+          </AnimateOnScroll>
         </div>
       </section>
 

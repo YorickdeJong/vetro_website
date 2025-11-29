@@ -6,7 +6,15 @@
       "Bash(git init:*)",
       "Bash(vercel init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(vercel link:*)",
+      "WebFetch(domain:www.vetrocleaningservice.nl)",
+      "Bash(pnpm install)",
+      "Bash(pnpm dev)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)",
+      "Bash(git push:*)",
+      "Bash(pnpm build:*)"
     ],
     "deny": [],
     "ask": []
