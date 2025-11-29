@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import AnimateOnScroll from '@/components/AnimateOnScroll'
 
 export default function Home() {
   return (
@@ -12,15 +13,15 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-widest mb-4 opacity-90">Vetro Cleaning Service</p>
-            <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+            <p className="text-sm font-medium uppercase tracking-widest mb-4 opacity-90 animate-fade-in-up">Vetro Cleaning Service</p>
+            <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6 animate-fade-in-up delay-100">
               Schoonmaken is een vak. Punt.
             </h1>
-            <p className="text-xl mb-10 opacity-95">
+            <p className="text-xl mb-10 opacity-95 animate-fade-in-up delay-200">
               Al meer dan 20 jaar leveren wij professionele schoonmaakdiensten met persoonlijke aandacht.
               Direct contact met de eigenaar, altijd betrouwbaar.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
               <Link href="#contact" className="btn btn-primary">Vraag een offerte aan</Link>
               <Link href="#diensten" className="btn bg-transparent text-white border-2 border-white/50 hover:border-white hover:bg-white/10">
                 Onze diensten
@@ -33,44 +34,58 @@ export default function Home() {
       {/* Services */}
       <section id="diensten" className="section" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <header className="section-header">
-            <h2 id="services-heading" className="text-3xl md:text-4xl font-semibold">Onze Diensten</h2>
-            <p className="text-gray-500">
-              Wij verzorgen professionele schoonmaak voor diverse sectoren. Van dagelijkse schoonmaak tot specialistische reiniging.
-            </p>
-          </header>
+          <AnimateOnScroll>
+            <header className="section-header">
+              <h2 id="services-heading" className="text-3xl md:text-4xl font-semibold">Onze Diensten</h2>
+              <p className="text-gray-500">
+                Wij verzorgen professionele schoonmaak voor diverse sectoren. Van dagelijkse schoonmaak tot specialistische reiniging.
+              </p>
+            </header>
+          </AnimateOnScroll>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ServiceCard
-              icon={<BuildingIcon />}
-              title="Kantoren"
-              description="Dagelijkse schoonmaak van kantoorruimtes, zodat uw medewerkers elke dag in een frisse omgeving kunnen werken."
-            />
-            <ServiceCard
-              icon={<SchoolIcon />}
-              title="Schoolgebouwen"
-              description="Hygiënische schoonmaak van scholen en onderwijsinstellingen. Veiligheid en gezondheid staan voorop."
-            />
-            <ServiceCard
-              icon={<HeartIcon />}
-              title="Zorginstellingen"
-              description="Specialistische schoonmaak voor zorginstellingen met extra aandacht voor hygiëne en desinfectie."
-            />
-            <ServiceCard
-              icon={<PoolIcon />}
-              title="Zwembaden"
-              description="Professionele reiniging van zwembaden en wellness faciliteiten. Schoon water begint bij een schone omgeving."
-            />
-            <ServiceCard
-              icon={<PracticeIcon />}
-              title="Praktijken"
-              description="Medische en therapeutische praktijken vragen om een steriele omgeving. Wij zorgen voor optimale hygiëne."
-            />
-            <ServiceCard
-              icon={<HomeIcon />}
-              title="VVE's"
-              description="Schoonmaak van gemeenschappelijke ruimtes in appartementencomplexen. Netjes en representatief."
-            />
+            <AnimateOnScroll delay={0}>
+              <ServiceCard
+                icon={<BuildingIcon />}
+                title="Kantoren"
+                description="Dagelijkse schoonmaak van kantoorruimtes, zodat uw medewerkers elke dag in een frisse omgeving kunnen werken."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={100}>
+              <ServiceCard
+                icon={<SchoolIcon />}
+                title="Schoolgebouwen"
+                description="Hygiënische schoonmaak van scholen en onderwijsinstellingen. Veiligheid en gezondheid staan voorop."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={200}>
+              <ServiceCard
+                icon={<HeartIcon />}
+                title="Zorginstellingen"
+                description="Specialistische schoonmaak voor zorginstellingen met extra aandacht voor hygiëne en desinfectie."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={300}>
+              <ServiceCard
+                icon={<PoolIcon />}
+                title="Zwembaden"
+                description="Professionele reiniging van zwembaden en wellness faciliteiten. Schoon water begint bij een schone omgeving."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={400}>
+              <ServiceCard
+                icon={<PracticeIcon />}
+                title="Praktijken"
+                description="Medische en therapeutische praktijken vragen om een steriele omgeving. Wij zorgen voor optimale hygiëne."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={500}>
+              <ServiceCard
+                icon={<HomeIcon />}
+                title="VVE's"
+                description="Schoonmaak van gemeenschappelijke ruimtes in appartementencomplexen. Netjes en representatief."
+              />
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
@@ -78,32 +93,42 @@ export default function Home() {
       {/* USP Section */}
       <section className="section section-alt" aria-labelledby="usp-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <header className="section-header">
-            <h2 id="usp-heading" className="text-3xl md:text-4xl font-semibold">Waarom Vetro?</h2>
-            <p className="text-gray-500">Wat ons anders maakt dan andere schoonmaakbedrijven.</p>
-          </header>
+          <AnimateOnScroll>
+            <header className="section-header">
+              <h2 id="usp-heading" className="text-3xl md:text-4xl font-semibold">Waarom Vetro?</h2>
+              <p className="text-gray-500">Wat ons anders maakt dan andere schoonmaakbedrijven.</p>
+            </header>
+          </AnimateOnScroll>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <UspItem
-              icon={<PersonIcon />}
-              title="Persoonlijk Contact"
-              description="Direct contact met eigenaar Mitch. Geen callcenters, geen wachttijden. Gewoon persoonlijk."
-            />
-            <UspItem
-              icon={<ShieldIcon />}
-              title="Betrouwbaarheid"
-              description="Nog nooit een klant verloren. Dat zegt genoeg over onze kwaliteit en betrouwbaarheid."
-            />
-            <UspItem
-              icon={<ClockIcon />}
-              title="Flexibiliteit"
-              description="Schoonmaak 's ochtends, 's avonds of tijdens kantooruren. Wij passen ons aan uw wensen aan."
-            />
-            <UspItem
-              icon={<EyeIcon />}
-              title="Transparantie"
-              description="Duidelijke planning en eerlijke communicatie. U weet altijd waar u aan toe bent."
-            />
+            <AnimateOnScroll delay={0}>
+              <UspItem
+                icon={<PersonIcon />}
+                title="Persoonlijk Contact"
+                description="Direct contact met eigenaar Mitch. Geen callcenters, geen wachttijden. Gewoon persoonlijk."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={100}>
+              <UspItem
+                icon={<ShieldIcon />}
+                title="Betrouwbaarheid"
+                description="Nog nooit een klant verloren. Dat zegt genoeg over onze kwaliteit en betrouwbaarheid."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={200}>
+              <UspItem
+                icon={<ClockIcon />}
+                title="Flexibiliteit"
+                description="Schoonmaak 's ochtends, 's avonds of tijdens kantooruren. Wij passen ons aan uw wensen aan."
+              />
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={300}>
+              <UspItem
+                icon={<EyeIcon />}
+                title="Transparantie"
+                description="Duidelijke planning en eerlijke communicatie. U weet altijd waar u aan toe bent."
+              />
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
@@ -112,49 +137,53 @@ export default function Home() {
       <section id="over-ons" className="section" aria-labelledby="about-heading">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80"
-                alt="Professioneel schoonmaakteam aan het werk"
-                width={800}
-                height={400}
-                className="w-full h-[400px] object-cover"
-              />
-            </div>
-            <div>
-              <h2 id="about-heading" className="text-3xl md:text-4xl font-semibold mb-6">Wie Zijn Wij?</h2>
-              <p className="text-gray-500 mb-4">
-                Vetro Cleaning Service is opgericht door Mitch Boekelaar, met inmiddels bijna 20 jaar ervaring
-                in de schoonmaakbranche. Wat begon als een eenmanszaak is uitgegroeid tot een betrouwbaar team
-                van ongeveer 10 toegewijde medewerkers.
-              </p>
-              <p className="text-gray-500 mb-4">
-                Wij geloven dat schoonmaken een echt vak is. Een vak dat vakmanschap, toewijding en oog voor detail
-                vraagt. Daarom werken wij alleen met mensen die deze passie delen.
-              </p>
-              <p className="text-gray-500 mb-6">
-                Als familiebedrijf staan persoonlijke aandacht en klantrelaties centraal. U bent geen nummer,
-                maar een partner waar wij dagelijks ons beste werk voor leveren.
-              </p>
-              <Link href="/team" className="btn btn-primary">
-                Ontmoet ons team
-              </Link>
+            <AnimateOnScroll>
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80"
+                  alt="Professioneel schoonmaakteam aan het werk"
+                  width={800}
+                  height={400}
+                  className="w-full h-[400px] object-cover"
+                />
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={150}>
+              <div>
+                <h2 id="about-heading" className="text-3xl md:text-4xl font-semibold mb-6">Wie Zijn Wij?</h2>
+                <p className="text-gray-500 mb-4">
+                  Vetro Cleaning Service is opgericht door Mitch Boekelaar, met inmiddels bijna 20 jaar ervaring
+                  in de schoonmaakbranche. Wat begon als een eenmanszaak is uitgegroeid tot een betrouwbaar team
+                  van ongeveer 10 toegewijde medewerkers.
+                </p>
+                <p className="text-gray-500 mb-4">
+                  Wij geloven dat schoonmaken een echt vak is. Een vak dat vakmanschap, toewijding en oog voor detail
+                  vraagt. Daarom werken wij alleen met mensen die deze passie delen.
+                </p>
+                <p className="text-gray-500 mb-6">
+                  Als familiebedrijf staan persoonlijke aandacht en klantrelaties centraal. U bent geen nummer,
+                  maar een partner waar wij dagelijks ons beste werk voor leveren.
+                </p>
+                <Link href="/team" className="btn btn-primary">
+                  Ontmoet ons team
+                </Link>
 
-              <div className="flex gap-8 mt-8 pt-8 border-t border-gray-200">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent">20+</div>
-                  <div className="text-sm text-gray-500">Jaar ervaring</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent">10</div>
-                  <div className="text-sm text-gray-500">Teamleden</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-accent">0</div>
-                  <div className="text-sm text-gray-500">Klanten verloren</div>
+                <div className="flex gap-8 mt-8 pt-8 border-t border-gray-200">
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent">20+</div>
+                    <div className="text-sm text-gray-500">Jaar ervaring</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent">10</div>
+                    <div className="text-sm text-gray-500">Teamleden</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-bold text-accent">0</div>
+                    <div className="text-sm text-gray-500">Klanten verloren</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
@@ -162,27 +191,35 @@ export default function Home() {
       {/* How We Work */}
       <section id="werkwijze" className="section section-alt" aria-labelledby="process-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <header className="section-header">
-            <h2 id="process-heading" className="text-3xl md:text-4xl font-semibold">Hoe Werken Wij?</h2>
-            <p className="text-gray-500">In drie eenvoudige stappen naar een schone werkomgeving.</p>
-          </header>
+          <AnimateOnScroll>
+            <header className="section-header">
+              <h2 id="process-heading" className="text-3xl md:text-4xl font-semibold">Hoe Werken Wij?</h2>
+              <p className="text-gray-500">In drie eenvoudige stappen naar een schone werkomgeving.</p>
+            </header>
+          </AnimateOnScroll>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-8">
-              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
-              <h3 className="text-xl font-semibold mb-3">Kennismaken</h3>
-              <p className="text-gray-500">We bespreken uw wensen en bekijken samen de locatie. Zo krijgen we een goed beeld van wat er nodig is.</p>
-            </div>
-            <div className="text-center p-8">
-              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
-              <h3 className="text-xl font-semibold mb-3">Plan Maken</h3>
-              <p className="text-gray-500">Op basis van het gesprek stellen we een duidelijke offerte en planning op. Transparant en zonder verrassingen.</p>
-            </div>
-            <div className="text-center p-8">
-              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
-              <h3 className="text-xl font-semibold mb-3">Schoonmaken</h3>
-              <p className="text-gray-500">Ons team gaat aan de slag. Vakkundig, betrouwbaar en met oog voor detail. Elke dag een schone frisse dag.</p>
-            </div>
+            <AnimateOnScroll delay={0}>
+              <div className="text-center p-8">
+                <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+                <h3 className="text-xl font-semibold mb-3">Kennismaken</h3>
+                <p className="text-gray-500">We bespreken uw wensen en bekijken samen de locatie. Zo krijgen we een goed beeld van wat er nodig is.</p>
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={150}>
+              <div className="text-center p-8">
+                <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+                <h3 className="text-xl font-semibold mb-3">Plan Maken</h3>
+                <p className="text-gray-500">Op basis van het gesprek stellen we een duidelijke offerte en planning op. Transparant en zonder verrassingen.</p>
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={300}>
+              <div className="text-center p-8">
+                <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+                <h3 className="text-xl font-semibold mb-3">Schoonmaken</h3>
+                <p className="text-gray-500">Ons team gaat aan de slag. Vakkundig, betrouwbaar en met oog voor detail. Elke dag een schone frisse dag.</p>
+              </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
@@ -190,39 +227,45 @@ export default function Home() {
       {/* Testimonials */}
       <section className="section" aria-labelledby="testimonials-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <header className="section-header">
-            <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-semibold">Wat Klanten Zeggen</h2>
-            <p className="text-gray-500">Onze klanten aan het woord.</p>
-          </header>
+          <AnimateOnScroll>
+            <header className="section-header">
+              <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-semibold">Wat Klanten Zeggen</h2>
+              <p className="text-gray-500">Onze klanten aan het woord.</p>
+            </header>
+          </AnimateOnScroll>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <article className="bg-white rounded-2xl p-8 shadow-md border border-gray-200">
-              <blockquote className="text-lg italic mb-6 text-gray-900 relative pl-6">
-                <span className="absolute left-0 top-0 text-3xl text-accent not-italic">&ldquo;</span>
-                Toen alles hier onder liep door een rioolverstopping heeft Mitch ons geweldig uit de brand geholpen.
-              </blockquote>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold">GR</div>
-                <div>
-                  <div className="font-semibold">Gert Rootert</div>
-                  <div className="text-sm text-gray-500">Directeur, Intermail BV</div>
+            <AnimateOnScroll delay={0}>
+              <article className="bg-white rounded-2xl p-8 shadow-md border border-gray-200 card-hover h-full">
+                <blockquote className="text-lg italic mb-6 text-gray-900 relative pl-6">
+                  <span className="absolute left-0 top-0 text-3xl text-accent not-italic">&ldquo;</span>
+                  Toen alles hier onder liep door een rioolverstopping heeft Mitch ons geweldig uit de brand geholpen.
+                </blockquote>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold">GR</div>
+                  <div>
+                    <div className="font-semibold">Gert Rootert</div>
+                    <div className="text-sm text-gray-500">Directeur, Intermail BV</div>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </AnimateOnScroll>
 
-            <article className="bg-white rounded-2xl p-8 shadow-md border border-gray-200">
-              <blockquote className="text-lg italic mb-6 text-gray-900 relative pl-6">
-                <span className="absolute left-0 top-0 text-3xl text-accent not-italic">&ldquo;</span>
-                Of er nou een feestje uit de hand liep of een tentoonstelling, Mitch staat altijd klaar.
-              </blockquote>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold">HW</div>
-                <div>
-                  <div className="font-semibold">Hans Wolbers</div>
-                  <div className="text-sm text-gray-500">Oprichter, Lava Design</div>
+            <AnimateOnScroll delay={150}>
+              <article className="bg-white rounded-2xl p-8 shadow-md border border-gray-200 card-hover h-full">
+                <blockquote className="text-lg italic mb-6 text-gray-900 relative pl-6">
+                  <span className="absolute left-0 top-0 text-3xl text-accent not-italic">&ldquo;</span>
+                  Of er nou een feestje uit de hand liep of een tentoonstelling, Mitch staat altijd klaar.
+                </blockquote>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-semibold">HW</div>
+                  <div>
+                    <div className="font-semibold">Hans Wolbers</div>
+                    <div className="text-sm text-gray-500">Oprichter, Lava Design</div>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </AnimateOnScroll>
           </div>
         </div>
       </section>
@@ -230,24 +273,28 @@ export default function Home() {
       {/* Contact CTA */}
       <section id="contact" className="section bg-gradient-to-br from-primary to-[#2d4a6f] text-white" aria-labelledby="contact-heading">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 id="contact-heading" className="text-3xl md:text-4xl font-semibold mb-4">Klaar voor een Schone Start?</h2>
-          <p className="mb-8 opacity-90 max-w-lg mx-auto">Neem vrijblijvend contact met ons op voor een gesprek of offerte. Wij reageren altijd binnen 24 uur.</p>
-          <a href="mailto:info@vetrocleaningservice.nl" className="btn btn-primary">Neem Contact Op</a>
+          <AnimateOnScroll>
+            <h2 id="contact-heading" className="text-3xl md:text-4xl font-semibold mb-4">Klaar voor een Schone Start?</h2>
+            <p className="mb-8 opacity-90 max-w-lg mx-auto">Neem vrijblijvend contact met ons op voor een gesprek of offerte. Wij reageren altijd binnen 24 uur.</p>
+            <a href="mailto:info@vetrocleaningservice.nl" className="btn btn-primary">Neem Contact Op</a>
+          </AnimateOnScroll>
 
-          <div className="flex flex-wrap justify-center gap-8 mt-12">
-            <div className="flex items-center gap-3">
-              <LocationIcon />
-              <span>Westeinde 44, 2036 JJ Haarlem</span>
+          <AnimateOnScroll delay={200}>
+            <div className="flex flex-wrap justify-center gap-8 mt-12">
+              <div className="flex items-center gap-3">
+                <LocationIcon />
+                <span>Westeinde 44, 2036 JJ Haarlem</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <PhoneIcon />
+                <a href="tel:+31620486660" className="hover:opacity-80 transition-opacity">+31 (0)6 20486660</a>
+              </div>
+              <div className="flex items-center gap-3">
+                <EmailIcon />
+                <a href="mailto:info@vetrocleaningservice.nl" className="hover:opacity-80 transition-opacity">info@vetrocleaningservice.nl</a>
+              </div>
             </div>
-            <div className="flex items-center gap-3">
-              <PhoneIcon />
-              <a href="tel:+31620486660" className="hover:opacity-80 transition-opacity">+31 (0)6 20486660</a>
-            </div>
-            <div className="flex items-center gap-3">
-              <EmailIcon />
-              <a href="mailto:info@vetrocleaningservice.nl" className="hover:opacity-80 transition-opacity">info@vetrocleaningservice.nl</a>
-            </div>
-          </div>
+          </AnimateOnScroll>
         </div>
       </section>
     </>
@@ -257,8 +304,8 @@ export default function Home() {
 // Service Card Component
 function ServiceCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <article className="bg-white rounded-2xl p-8 border border-gray-200 transition-all duration-200 hover:shadow-xl hover:-translate-y-1 hover:border-accent">
-      <div className="w-14 h-14 bg-gray-50 rounded-xl flex items-center justify-center mb-5 text-accent" aria-hidden="true">
+    <article className="bg-white rounded-2xl p-8 border border-gray-200 transition-all duration-300 ease-out hover:shadow-xl hover:-translate-y-2 hover:border-accent group h-full">
+      <div className="w-14 h-14 bg-gray-50 rounded-xl flex items-center justify-center mb-5 text-accent transition-transform duration-300 group-hover:scale-110" aria-hidden="true">
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
@@ -270,8 +317,8 @@ function ServiceCard({ icon, title, description }: { icon: React.ReactNode; titl
 // USP Item Component
 function UspItem({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <div className="text-center p-6">
-      <div className="w-[72px] h-[72px] bg-accent rounded-full flex items-center justify-center mx-auto mb-5 text-white" aria-hidden="true">
+    <div className="text-center p-6 group">
+      <div className="w-[72px] h-[72px] bg-accent rounded-full flex items-center justify-center mx-auto mb-5 text-white transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/30" aria-hidden="true">
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
