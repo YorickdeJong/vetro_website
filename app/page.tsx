@@ -18,11 +18,11 @@ export default function Home() {
               Schoonmaken is een vak. Punt.
             </h1>
             <p className="text-xl mb-10 opacity-95 animate-fade-in-up delay-200">
-              Al meer dan 20 jaar dé specialist in professionele schoonmaakdiensten in Haarlem, Amsterdam, Utrecht en heel Noord-Holland.
-              Direct contact met de eigenaar, 100% betrouwbaar.
+              Al meer dan 20 jaar uw partner in professionele schoonmaak in Haarlem, Amsterdam, Utrecht en heel Noord-Holland.
+              Altijd bereikbaar, altijd betrouwbaar. Dat is onze belofte.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
-              <Link href="#contact" className="btn btn-primary">Vraag een offerte aan</Link>
+              <Link href="#contact" className="btn btn-primary">Gratis offerte aanvragen</Link>
               <Link href="#diensten" className="btn bg-transparent text-white border-2 border-white/50 hover:border-white hover:bg-white/10">
                 Onze diensten
               </Link>
@@ -49,42 +49,42 @@ export default function Home() {
               <ServiceCard
                 icon={<BuildingIcon />}
                 title="Kantoren"
-                description="Dagelijkse schoonmaak van kantoorruimtes, zodat uw medewerkers elke dag in een frisse omgeving kunnen werken."
+                description="Een frisse werkplek waar uw medewerkers graag komen. Dagelijkse schoonmaak die u niet ziet, maar wel merkt."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={100}>
               <ServiceCard
                 icon={<SchoolIcon />}
                 title="Schoolgebouwen"
-                description="Hygiënische schoonmaak van scholen en onderwijsinstellingen. Veiligheid en gezondheid staan voorop."
+                description="Gezonde leeromgeving voor leerlingen en docenten. Hygiëne op de eerste plaats, veiligheid als standaard."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
               <ServiceCard
                 icon={<HeartIcon />}
                 title="Zorginstellingen"
-                description="Specialistische schoonmaak voor zorginstellingen met extra aandacht voor hygiëne en desinfectie."
+                description="Waar hygiëne levensbelangrijk is. Specialistische schoonmaak met oog voor kwetsbare bewoners en patiënten."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={300}>
               <ServiceCard
                 icon={<PoolIcon />}
                 title="Zwembaden"
-                description="Professionele reiniging van zwembaden en wellness faciliteiten. Schoon water begint bij een schone omgeving."
+                description="Kristalhelder water verdient een vlekkeloze omgeving. Professionele reiniging van zwembaden en wellness."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={400}>
               <ServiceCard
                 icon={<PracticeIcon />}
                 title="Praktijken"
-                description="Medische en therapeutische praktijken vragen om een steriele omgeving. Wij zorgen voor optimale hygiëne."
+                description="Uw patiënten verdienen een steriele omgeving. Optimale hygiëne voor medische en therapeutische praktijken."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={500}>
               <ServiceCard
                 icon={<HomeIcon />}
                 title="VVE's"
-                description="Schoonmaak van gemeenschappelijke ruimtes in appartementencomplexen. Netjes en representatief."
+                description="Een verzorgde entree maakt het verschil. Representatieve gemeenschappelijke ruimtes voor uw bewoners."
               />
             </AnimateOnScroll>
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
           <AnimateOnScroll>
             <header className="section-header">
               <h2 id="usp-heading" className="text-3xl md:text-4xl font-semibold">Waarom Vetro?</h2>
-              <p className="text-gray-500">Wat ons anders maakt dan andere schoonmaakbedrijven.</p>
+              <p className="text-gray-500">Dit maakt ons anders. En daar zijn we trots op.</p>
             </header>
           </AnimateOnScroll>
 
@@ -106,28 +106,28 @@ export default function Home() {
               <UspItem
                 icon={<PersonIcon />}
                 title="Persoonlijk Contact"
-                description="Direct contact met eigenaar Mitch. Geen callcenters, geen wachttijden. Gewoon persoonlijk."
+                description="Bel Mitch direct. Geen wachtrijen, geen keuzemenu's. Gewoon een gesprek van mens tot mens."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={100}>
               <UspItem
                 icon={<ShieldIcon />}
                 title="Betrouwbaarheid"
-                description="Nog nooit een klant verloren. Dat zegt genoeg over onze kwaliteit en betrouwbaarheid."
+                description="Nog nooit een klant verloren. Niet één. Dat zegt meer dan welke belofte dan ook."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
               <UspItem
                 icon={<ClockIcon />}
                 title="Flexibiliteit"
-                description="Schoonmaak 's ochtends, 's avonds of tijdens kantooruren. Wij passen ons aan uw wensen aan."
+                description="'s Ochtends vroeg of 's avonds laat. Wij werken wanneer het u uitkomt."
               />
             </AnimateOnScroll>
             <AnimateOnScroll delay={300}>
               <UspItem
                 icon={<EyeIcon />}
                 title="Transparantie"
-                description="Duidelijke planning en eerlijke communicatie. U weet altijd waar u aan toe bent."
+                description="Geen verrassingen op de factuur. Heldere afspraken, eerlijke prijzen."
               />
             </AnimateOnScroll>
           </div>
@@ -153,17 +153,16 @@ export default function Home() {
               <div>
                 <h2 id="about-heading" className="text-3xl md:text-4xl font-semibold mb-6">Wie Zijn Wij?</h2>
                 <p className="text-gray-500 mb-4">
-                  Vetro Cleaning Service is opgericht door Mitch Boekelaar, met inmiddels bijna 20 jaar ervaring
-                  in de schoonmaakbranche. Wat begon als een eenmanszaak is uitgegroeid tot een betrouwbaar team
-                  van ongeveer 10 toegewijde medewerkers.
+                  Vetro is het verhaal van Mitch Boekelaar. Bijna 20 jaar geleden begonnen als eenmanszaak,
+                  inmiddels uitgegroeid tot een hecht team van 10 vakmensen die elke dag het verschil maken.
                 </p>
                 <p className="text-gray-500 mb-4">
-                  Wij geloven dat schoonmaken een echt vak is. Een vak dat vakmanschap, toewijding en oog voor detail
-                  vraagt. Daarom werken wij alleen met mensen die deze passie delen.
+                  Wij geloven dat schoonmaken een echt vak is. Geen bijbaantje, maar vakmanschap.
+                  Daarom werken we alleen met mensen die net zo perfectionistisch zijn als wij.
                 </p>
                 <p className="text-gray-500 mb-6">
-                  Als familiebedrijf staan persoonlijke aandacht en klantrelaties centraal. U bent geen nummer,
-                  maar een partner waar wij dagelijks ons beste werk voor leveren.
+                  Bij Vetro bent u geen dossiernummer. U bent een partner. Iemand voor wie we elke dag
+                  ons beste werk willen leveren. Dat is hoe we al 20 jaar werken. En dat verandert niet.
                 </p>
                 <Link href="/team" className="btn btn-primary">
                   Ontmoet ons team
@@ -194,8 +193,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <header className="section-header">
-              <h2 id="process-heading" className="text-3xl md:text-4xl font-semibold">Hoe Werken Wij?</h2>
-              <p className="text-gray-500">In drie eenvoudige stappen naar een schone werkomgeving.</p>
+              <h2 id="process-heading" className="text-3xl md:text-4xl font-semibold">Zo Werken Wij</h2>
+              <p className="text-gray-500">Geen ingewikkelde procedures. Gewoon drie heldere stappen.</p>
             </header>
           </AnimateOnScroll>
 
@@ -204,21 +203,21 @@ export default function Home() {
               <div className="text-center p-8">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
                 <h3 className="text-xl font-semibold mb-3">Kennismaken</h3>
-                <p className="text-gray-500">We bespreken uw wensen en bekijken samen de locatie. Zo krijgen we een goed beeld van wat er nodig is.</p>
+                <p className="text-gray-500">We komen langs, luisteren naar uw wensen en bekijken de situatie. Koffie is altijd welkom.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={150}>
               <div className="text-center p-8">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
-                <h3 className="text-xl font-semibold mb-3">Plan Maken</h3>
-                <p className="text-gray-500">Op basis van het gesprek stellen we een duidelijke offerte en planning op. Transparant en zonder verrassingen.</p>
+                <h3 className="text-xl font-semibold mb-3">Voorstel</h3>
+                <p className="text-gray-500">U ontvangt een heldere offerte. Wat u ziet is wat u betaalt. Geen kleine lettertjes.</p>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={300}>
               <div className="text-center p-8">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
-                <h3 className="text-xl font-semibold mb-3">Schoonmaken</h3>
-                <p className="text-gray-500">Ons team gaat aan de slag. Vakkundig, betrouwbaar en met oog voor detail. Elke dag een schone frisse dag.</p>
+                <h3 className="text-xl font-semibold mb-3">Aan de Slag</h3>
+                <p className="text-gray-500">Ons team komt in actie. Vakkundig, betrouwbaar, met oog voor detail. Elke dag weer.</p>
               </div>
             </AnimateOnScroll>
           </div>
@@ -313,7 +312,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <h2 id="contact-heading" className="text-3xl md:text-4xl font-semibold mb-4">Klaar voor een Schone Start?</h2>
-            <p className="mb-8 opacity-90 max-w-lg mx-auto">Neem vrijblijvend contact met ons op voor een gesprek of offerte. Wij reageren altijd binnen 24 uur.</p>
+            <p className="mb-8 opacity-90 max-w-lg mx-auto">Bel, mail of stuur een berichtje. Binnen 24 uur hoort u van ons. Dat beloven we.</p>
             <a href="mailto:info@vetrocleaningservice.nl" className="btn btn-primary">Neem Contact Op</a>
           </AnimateOnScroll>
 
